@@ -1,9 +1,16 @@
 /* Global Layout Set-up */
 * { 
   box-sizing: border-box;
+ 
 }
-  
-body {
+* a {
+ text-decoration: none;
+ color: #999;
+}
+* a:hover {
+  color: #6633ff;
+}  
+.index-body{
   margin: 0;
   padding: 0;
   text-align: center;
@@ -23,7 +30,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.index-nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -55,17 +62,17 @@ a:hover {
   color: white
 }
 
-header {
+.index-header{
   text-align: center;
   background: url('images/background-image.jpeg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
-header {
+.index-header{
   line-height: 1.5;
 }
-header .profile-image {
+.profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
@@ -73,7 +80,7 @@ header .profile-image {
   border: 5px solid rgba(177, 30, 116, 50);
   transition: all .5s;
 }
-header .profile-image:hover {
+.profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
@@ -120,7 +127,7 @@ ul.skills {
   background: #0399ff;
 }
 
-footer {
+footer{
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
@@ -151,15 +158,13 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
+
 a.github {
   background-image: url(images/github.svg);
+  text-decoration: none;
+  
 }
+
 a.social:hover {
   opacity: 1;
 }
@@ -179,7 +184,7 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
+  header  {
     min-height: 470px;
   }
 
@@ -205,3 +210,41 @@ a.social:hover {
 
 }
 
+/* Hobbies CSS */ 
+
+body {
+
+  text-align: center;
+  background-color: beige;
+
+}
+.hobbies-footer{
+
+  text-align: center;
+  
+ }
+.text {
+
+  text-align: center;
+
+}
+
+/* Experience CSS */
+.experience-nav {
+  background-color: whitesmoke;
+}
+
+header {
+   background-color: whitesmoke;
+   background-size: cover;
+}
+
+body {
+ background-color: whitesmoke;
+
+}
+
+.experience-photo {
+   height: 300px;
+   ;
+}
